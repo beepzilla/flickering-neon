@@ -23,14 +23,34 @@ function applyGlowEffect(event, element, type) {
             0 0 ${40 * intensity}px #00ff00,
             0 0 ${80 * intensity}px #00ff00
         `;
-        // Apply the outer glowing effect to the border
         element.style.boxShadow = `
             0 0 ${10 * intensity}px rgba(22, 182, 212, ${intensity}),
             0 0 ${20 * intensity}px rgba(22, 182, 212, ${intensity}),
             0 0 ${40 * intensity}px rgba(22, 182, 212, ${intensity})
         `;
     } else if (type === 'image') {
-        const imageIntensity = intensity * 0.6;
-        element.style.filter = `brightness(${1 + imageIntensity})`;
+        // Calculate the color based on intensity for a rainbow effect
+        const startColor = { r: 0, g: 255, b: 0 }; // Green
+        const endColor = { r: 128, g: 0, b: 128 }; // Purple
+        const color = interpolateColor(startColor, endColor, intensity);
+        const rgbColor = `rgb(${color.r}, ${color.g}, ${color.b})`;
+
+        element.style.boxShadow = `
+            0 0 ${15 * intensity}px ${rgbColor},
+            0 0 ${30 * intensity}px ${rgbColor},
+            0 0 ${45 * intensity}px ${rgbColor}
+        `;
+        element.style.filter = `brightness(${1 + intensity * 0.5})`;
     }
+}
+
+function interpolateColor(color1, color2, factor) {
+    if (arguments.length < 3) { 
+        factor = 0.5; 
+    }
+    const result = color1;
+    result.r = Math.round(result.r + factor * (color2.r - color1.r));
+    result.g = Math.round(result.g + factor * (color2.g - color1.g));
+    result.b = Math.round(result.b + factor * (color2.b - color1.b));
+    return result;
 }
