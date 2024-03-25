@@ -18,15 +18,16 @@ function applyGlowEffect(event, element, type) {
 
     if (type === 'text') {
         element.style.textShadow = `
-            0 0 ${10 * intensity}px #00ff00,
-            0 0 ${20 * intensity}px #00ff00,
-            0 0 ${40 * intensity}px #00ff00,
-            0 0 ${80 * intensity}px #00ff00
+            0 0 ${30 * intensity}px #00ff00,
+            0 0 ${60 * intensity}px #00ff00,
+            0 0 ${120 * intensity}px #00ff00,
+            0 0 ${240 * intensity}px #00ff00
         `;
+        element.style.border = `3px solid rgba(22, 182, 212, ${intensity})`;
         element.style.boxShadow = `
-            0 0 ${10 * intensity}px rgba(22, 182, 212, ${intensity}),
-            0 0 ${20 * intensity}px rgba(22, 182, 212, ${intensity}),
-            0 0 ${40 * intensity}px rgba(22, 182, 212, ${intensity})
+            0 0 ${30 * intensity}px rgba(22, 182, 212, ${intensity}),
+            0 0 ${60 * intensity}px rgba(22, 182, 212, ${intensity}),
+            0 0 ${120 * intensity}px rgba(22, 182, 212, ${intensity})
         `;
     } else if (type === 'image') {
         // Calculate the color based on intensity for a rainbow effect
