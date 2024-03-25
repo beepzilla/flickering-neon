@@ -10,7 +10,60 @@ body {
   display: grid;
   place-items: center;
   min-height: 100vh;
+  background: #150220;@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
   background: #150220;
+}
+
+#image-container {
+  width: 512px;
+  height: 512px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+#image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+div#text {
+  font-family: "Press Start 2P", cursive;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  color: #00ff00;
+  border: 3px solid rgba(22, 182, 212, 0.3);
+  padding: 10px;
+  position: relative;
+  width: 550px;
+  height: 150px;
+  margin-bottom: 20px; /* Add space between text and image */
+  cursor: pointer;
+  transition: text-shadow 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+}
+
+span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+}
+
 }
 
 #image-container {
