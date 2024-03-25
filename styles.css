@@ -13,6 +13,21 @@ body {
   background: #150220;
 }
 
+#image-container {
+  width: 512px;
+  height: 512px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 div {
   font-family: "Press Start 2P", cursive;
   font-size: 3rem;
