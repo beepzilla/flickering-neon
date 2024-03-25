@@ -18,30 +18,29 @@ function applyGlowEffect(event, element, type) {
 
     if (type === 'text') {
         element.style.textShadow = `
-            0 0 ${30 * intensity}px #00ff00,
-            0 0 ${60 * intensity}px #00ff00,
-            0 0 ${120 * intensity}px #00ff00,
-            0 0 ${240 * intensity}px #00ff00
+            0 0 ${50 * intensity}px #00ff00,
+            0 0 ${100 * intensity}px #00ff00,
+            0 0 ${200 * intensity}px #00ff00,
+            0 0 ${400 * intensity}px #00ff00
         `;
         element.style.border = `3px solid rgba(22, 182, 212, ${intensity})`;
         element.style.boxShadow = `
-            0 0 ${30 * intensity}px rgba(22, 182, 212, ${intensity}),
-            0 0 ${60 * intensity}px rgba(22, 182, 212, ${intensity}),
-            0 0 ${120 * intensity}px rgba(22, 182, 212, ${intensity})
+            0 0 ${50 * intensity}px rgba(22, 182, 212, ${intensity}),
+            0 0 ${100 * intensity}px rgba(22, 182, 212, ${intensity}),
+            0 0 ${200 * intensity}px rgba(22, 182, 212, ${intensity})
         `;
     } else if (type === 'image') {
-        // Calculate the color based on intensity for a rainbow effect
         const startColor = { r: 0, g: 255, b: 0 }; // Green
         const endColor = { r: 128, g: 0, b: 128 }; // Purple
         const color = interpolateColor(startColor, endColor, intensity);
         const rgbColor = `rgb(${color.r}, ${color.g}, ${color.b})`;
 
         element.style.boxShadow = `
-            0 0 ${15 * intensity}px ${rgbColor},
             0 0 ${30 * intensity}px ${rgbColor},
-            0 0 ${45 * intensity}px ${rgbColor}
+            0 0 ${60 * intensity}px ${rgbColor},
+            0 0 ${90 * intensity}px ${rgbColor}
         `;
-        element.style.filter = `brightness(${1 + intensity * 0.5})`;
+        element.style.filter = `brightness(${1 + intensity * 0.8})`;
     }
 }
 
