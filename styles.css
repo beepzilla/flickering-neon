@@ -15,7 +15,7 @@ body {
 
 div {
   font-family: "Press Start 2P", cursive;
-  font-size: 4rem; /* Adjusted font size for better readability */
+  font-size: 3rem; /* Adjusted font size for better readability */
   letter-spacing: 5px;
   color: #1f0e28;
   border: 3px solid rgba(22, 182, 212, 0.3);
