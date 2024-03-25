@@ -1,9 +1,9 @@
 const textElement = document.getElementById('text');
-const imageElement = document.getElementById('image');
+const imageContainer = document.getElementById('image-container');
 
 document.addEventListener('mousemove', (event) => {
     applyGlowEffect(event, textElement, 'text');
-    applyGlowEffect(event, imageElement, 'image');
+    applyGlowEffect(event, imageContainer, 'image');
 });
 
 function applyGlowEffect(event, element, type) {
@@ -36,11 +36,10 @@ function applyGlowEffect(event, element, type) {
         const rgbColor = `rgb(${color.r}, ${color.g}, ${color.b})`;
 
         element.style.boxShadow = `
-            0 0 ${30 * intensity}px ${rgbColor},
-            0 0 ${60 * intensity}px ${rgbColor},
-            0 0 ${90 * intensity}px ${rgbColor}
+            0 0 ${50 * intensity}px ${rgbColor},
+            0 0 ${100 * intensity}px ${rgbColor},
+            0 0 ${150 * intensity}px ${rgbColor}
         `;
-        element.style.filter = `brightness(${1 + intensity * 0.8})`;
     }
 }
 
