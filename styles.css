@@ -16,7 +16,7 @@ body {
 #navbar {
   width: 100%;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .nav-link {
@@ -39,6 +39,7 @@ body {
   overflow: hidden;
   position: relative;
   margin-bottom: 10px; /* Reduced bottom margin */
+  margin-top: 10px;
   cursor: pointer;
   transition: box-shadow 0.3s ease;
 }
@@ -60,7 +61,7 @@ div#text {
   position: relative;
   width: 680px; /* Increased width */
   height: 180px; /* Increased height */
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-top: 5px; /* Reduced top margin */
   cursor: pointer;
   transition: text-shadow 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
