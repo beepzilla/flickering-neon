@@ -53,3 +53,38 @@ function interpolateColor(color1, color2, factor) {
     result.b = Math.round(result.b + factor * (color2.b - color1.b));
     return result;
 }
+
+const audioPlayer = document.getElementById('audio-player');
+const playBtn = document.getElementById('play-btn');
+const nextBtn = document.getElementById('next-btn');
+const audioSource = document.getElementById('audio-source');
+
+let isPlaying = false;
+let currentSongIndex = 0;
+const songs = ['song1.mp3', 'song2.mp3', 'song3.mp3', 'song4.mp3', 'song5.mp3', 'song6.mp3', 'song7.mp3', 'song8.mp3'];
+
+playBtn.addEventListener('click', () => {
+    if (isPlaying) {
+        audioPlayer.pause();
+        isPlaying = false;
+        playBtn.src = 'play_button_image_url'; // Change to play button image URL
+    } else {
+        audioPlayer.play();
+        isPlaying = true;
+        playBtn.src = 'pause_button_image_url'; // Change to pause button image URL
+    }
+});
+
+nextBtn.addEventListener('click', () => {
+    currentSongIndex = (currentSongIndex + 1) % songs.length;
+    audioSource.src = songs[currentSongIndex];
+    audioPlayer.load();
+    if (isPlaying) {
+        audioPlayer.play();
+    }
+});
+
+audioPlayer.addEventListener('ended', () => {
+    nextBtn.click();
+});
+
