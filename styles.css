@@ -19,7 +19,7 @@ body {
   border-radius: 10px;
   overflow: hidden;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 10px; /* Reduced bottom margin */
   cursor: pointer;
   transition: box-shadow 0.3s ease;
 }
@@ -42,7 +42,7 @@ div#text {
   width: 680px; /* Increased width */
   height: 180px; /* Increased height */
   margin-bottom: 20px;
-  margin-top: 10px; /* Reduced top margin */
+  margin-top: 5px; /* Reduced top margin */
   cursor: pointer;
   transition: text-shadow 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
 }
