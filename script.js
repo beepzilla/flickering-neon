@@ -1,10 +1,10 @@
+const textElement = document.getElementById('text');
+const imageContainer = document.getElementById('image-container');
 const audioPlayer = document.getElementById('audio-player');
 const playBtn = document.getElementById('play-btn');
 const pauseBtn = document.getElementById('pause-btn');
 const nextBtn = document.getElementById('next-btn');
 const audioSource = document.getElementById('audio-source');
-const textElement = document.getElementById('text');
-const imageContainer = document.getElementById('image-container');
 
 let isPlaying = false;
 let currentSongIndex = 0;
@@ -68,7 +68,7 @@ function applyGlowEffect(event, element, type) {
     const centerY = top + height / 2;
     const distance = Math.sqrt((clientX - centerX) ** 2 + (clientY - centerY) ** 2);
 
-    const maxDistance = Math.max(width, height) / 2;
+    const maxDistance = Math.max(width, height) / 2; 
     const intensity = Math.max(0, 1 - distance / maxDistance);
 
     if (type === 'text') {
@@ -76,7 +76,8 @@ function applyGlowEffect(event, element, type) {
             0 0 ${50 * intensity}px #00ff00,
             0 0 ${100 * intensity}px #00ff00,
             0 0 ${200 * intensity}px #00ff00,
-            0 0 ${400 * intensity}px #00ff00`;
+                        0 0 ${400 * intensity}px #00ff00
+        `;
         element.style.border = `3px solid rgba(22, 182, 212, ${intensity})`;
         element.style.boxShadow = `
             0 0 ${50 * intensity}px rgba(22, 182, 212, ${intensity}),
@@ -107,5 +108,3 @@ function interpolateColor(color1, color2, factor) {
     result.b = Math.round(result.b + factor * (color2.b - color1.b));
     return result;
 }
-
-       
