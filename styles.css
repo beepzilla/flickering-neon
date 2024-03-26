@@ -67,7 +67,7 @@ body {
   padding: 15px;
   width: 680px;
   height: 180px;
-  margin-top: 90px; /* Adjusted margin to account for fixed navbar */
+  margin-top: 50px; /* Adjusted margin to account for fixed navbar */
   display: flex;
   justify-content: center;
   align-items: center;
