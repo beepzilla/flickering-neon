@@ -27,14 +27,15 @@ body {
   z-index: 1;
 }
 
-#nav-left, #nav-right, #nav-center {
+#nav-left, #nav-right {
   display: flex;
   align-items: center;
 }
 
 #nav-center {
+  display: flex;
   flex-grow: 1;
-  justify-content: space-evenly;
+  justify-content: space-around; /* Changed from space-evenly to space-around */
 }
 
 #logo {
