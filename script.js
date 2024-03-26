@@ -13,7 +13,7 @@ function applyGlowEffect(event, element, type) {
     const centerY = top + height / 2;
     const distance = Math.sqrt((clientX - centerX) ** 2 + (clientY - centerY) ** 2);
 
-    const maxDistance = Math.sqrt(window.innerWidth ** 2 + window.innerHeight ** 2);
+    const maxDistance = Math.max(width, height) / 2; // Adjust for a more abrupt transition
     const intensity = Math.max(0, 1 - distance / maxDistance);
 
     if (type === 'text') {
