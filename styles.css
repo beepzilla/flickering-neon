@@ -10,24 +10,12 @@ body {
   display: grid;
   place-items: center;
   min-height: 100vh;
-  background: #150220;@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  display: grid;
-  place-items: center;
-  min-height: 100vh;
   background: #150220;
 }
 
 #image-container {
-  width: 512px;
-  height: 512px;
+  width: 480px; /* Reduced width */
+  height: 480px; /* Reduced height */
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -40,60 +28,20 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-div#text {
-  font-family: "Press Start 2P", cursive;
-  font-size: 3rem;
-  letter-spacing: 3px;
-  color: #00ff00;
-  border: 3px solid rgba(22, 182, 212, 0.3);
-  padding: 10px;
-  position: relative;
-  width: 550px;
-  height: 150px;
-  margin-bottom: 20px; /* Add space between text and image */
-  cursor: pointer;
-  transition: text-shadow 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
-}
-
-span {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 10%;
-}
-
-}
-
-#image-container {
-  width: 512px;
-  height: 512px;
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 20px;
-  cursor: pointer;
-}
-
-#image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   transition: filter 0.3s ease, box-shadow 0.3s ease;
 }
 
 div#text {
   font-family: "Press Start 2P", cursive;
-  font-size: 3rem;
+  font-size: 3.5rem; /* Increased font size */
   letter-spacing: 3px;
   color: #00ff00;
-  border: 3px solid rgba(22, 182, 212, 0.3);
-  padding: 10px;
+  border: 4px solid rgba(22, 182, 212, 0.3); /* Increased border size */
+  padding: 15px; /* Increased padding */
   position: relative;
-  width: 550px;
-  height: 150px;
-  margin-bottom: 20px; /* Add space between text and image */
+  width: 580px; /* Increased width */
+  height: 180px; /* Increased height */
+  margin-bottom: 20px;
   cursor: pointer;
   transition: text-shadow 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
 }
