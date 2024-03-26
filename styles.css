@@ -20,20 +20,24 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding: 0 30px;
   background: #150220;
   position: fixed;
-  top: 0; /* Changed from 10 to 0 for better alignment */
+  top: 0;
   z-index: 1;
 }
 
-#nav-left, #nav-right {
+#nav-left, #nav-right, #nav-center {
   display: flex;
   align-items: center;
 }
 
+#nav-center {
+  flex-grow: 1;
+  justify-content: space-evenly;
+}
+
 #logo {
-  margin-right: 10px;
   height: 60px;
   width: 60px;
 }
@@ -41,17 +45,12 @@ body {
 .nav-link {
   color: #00ff00;
   text-decoration: none;
-  margin: 0 10px;
   text-shadow: 0 0 20px #00ff00;
   transition: text-shadow 0.3s ease;
 }
 
 .nav-link:hover {
   text-shadow: 0 0 20px #0000ff;
-}
-
-.nav-icon {
-  margin-left: 10px;
 }
 
 .nav-icon img {
@@ -67,15 +66,14 @@ body {
   padding: 15px;
   width: 680px;
   height: 180px;
-  margin-top: 150px; /* Increased margin to move the box down */
+  margin-top: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: text-shadow 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
-  z-index: 2; /* Add this line to bring the text box above the navbar */
+  z-index: 2;
 }
-
 
 #image-container {
   width: 480px;
