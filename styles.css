@@ -20,7 +20,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px;
+  padding: 30px;
   background: #150220;
   position: fixed;
   top: 0; /* Changed from 10 to 0 for better alignment */
@@ -73,7 +73,9 @@ body {
   align-items: center;
   cursor: pointer;
   transition: text-shadow 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+  z-index: 2; /* Add this line to bring the text box above the navbar */
 }
+
 
 #image-container {
   width: 480px;
