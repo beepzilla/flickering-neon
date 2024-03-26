@@ -32,6 +32,11 @@ body {
   align-items: center;
 }
 
+#logo {
+  height: 60px;
+  width: 60px;
+}
+
 .nav-link {
   color: #00ff00;
   text-decoration: none;
