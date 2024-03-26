@@ -42,6 +42,7 @@ div#text {
   width: 680px; /* Increased width */
   height: 180px; /* Increased height */
   margin-bottom: 20px;
+  margin-top: 10px; /* Reduced top margin */
   cursor: pointer;
   transition: text-shadow 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
 }
