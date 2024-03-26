@@ -20,24 +20,18 @@ const songs = [
 ];
 
 playBtn.addEventListener('click', () => {
-    if (isPlaying) {
-        audioPlayer.pause();
-    } else {
+    if (!isPlaying) {
         audioPlayer.play();
+    } else {
+        audioPlayer.pause();
     }
-});
-
-pauseBtn.addEventListener('click', () => {
-    audioPlayer.pause();
 });
 
 nextBtn.addEventListener('click', () => {
     currentSongIndex = (currentSongIndex + 1) % songs.length;
     audioSource.src = songs[currentSongIndex];
     audioPlayer.load();
-    if (isPlaying) {
-        audioPlayer.play();
-    }
+    audioPlayer.play();
 });
 
 audioPlayer.addEventListener('play', () => {
@@ -55,6 +49,7 @@ audioPlayer.addEventListener('pause', () => {
 audioPlayer.addEventListener('ended', () => {
     nextBtn.click();
 });
+
 
 document.addEventListener('mousemove', (event) => {
     applyGlowEffect(event, textElement, 'text');
