@@ -61,7 +61,7 @@ const audioSource = document.getElementById('audio-source');
 
 let isPlaying = false;
 let currentSongIndex = 0;
-const songs = ['song1.mp3', 'song2.mp3', 'song3.mp3', 'song4.mp3', 'song5.mp3', 'song6.mp3', 'song7.mp3', 'song8.mp3'];
+const songs = ['https://ipfs.io/ipfs/Qma4cKFvWvfqoKXpB3KCPhFsz2ySje5PSNywTBZff8eXT4/stardust-danijel-zambo-main-version-03-13-1372.mp3', 'https://ipfs.io/ipfs/Qma4cKFvWvfqoKXpB3KCPhFsz2ySje5PSNywTBZff8eXT4/stellar-escape-prigida-main-version-25318-03-02.mp3', 'https://ipfs.io/ipfs/Qma4cKFvWvfqoKXpB3KCPhFsz2ySje5PSNywTBZff8eXT4/stellar-escape-prigida-main-version-25318-03-02%20(1).mp3', 'song4.mp3', 'song5.mp3', 'song6.mp3', 'song7.mp3', 'song8.mp3'];
 
 playBtn.addEventListener('click', () => {
     if (isPlaying) {
