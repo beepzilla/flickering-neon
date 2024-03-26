@@ -39,7 +39,7 @@ div#text {
   border: 4px solid rgba(22, 182, 212, 0.3); /* Increased border size */
   padding: 15px; /* Increased padding */
   position: relative;
-  width: 580px; /* Increased width */
+  width: 680px; /* Increased width */
   height: 180px; /* Increased height */
   margin-bottom: 20px;
   cursor: pointer;
