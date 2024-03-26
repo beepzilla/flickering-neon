@@ -24,12 +24,12 @@ body {
   color: #00ff00;
   text-decoration: none;
   margin: 0 10px;
-  text-shadow: 0 0 10px #00ff00;
+  text-shadow: 0 0 20px #00ff00;
   transition: text-shadow 0.3s ease;
 }
 
 .nav-link:hover {
-  text-shadow: 0 0 10px #0000ff;
+  text-shadow: 0 0 20px #0000ff;
 }
 
 #image-container {
