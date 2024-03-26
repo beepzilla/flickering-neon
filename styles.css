@@ -1,98 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    background: #150220;
-    font-family: 'Press Start 2P', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: #150220;
+  font-family: 'Press Start 2P', cursive;
 }
 
 #navbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
-    background: #150220;
-    position: fixed;
-    top: 0;
-    z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  background: #150220;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
 #nav-left, #nav-right {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .nav-link {
-    color: #00ff00;
-    text-decoration: none;
-    text-shadow: 0 0 20px #00ff00;
-    transition: text-shadow 0.3s ease;
-    margin: 0 10px;
+  color: #00ff00;
+  text-decoration: none;
+  text-shadow: 0 0 20px #00ff00;
+  transition: text-shadow 0.3s ease;
+  margin: 0 10px;
 }
 
 .nav-link:hover {
-    text-shadow: 0 0 20px #0000ff;
+  text-shadow: 0 0 20px #0000ff;
 }
 
 .nav-icon img {
-    height: 24px;
-    width: 24px;
+  height: 24px;
+  width: 24px;
 }
 
 #text {
-    font-size: 3.2rem;
-    letter-spacing: 3px;
-    color: #00ff00;
-    border: 4px solid rgba(22, 182, 212, 0.3);
-    padding: 15px;
-    width: 680px;
-    height: 180px;
-    margin-top: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: text-shadow 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
-    z-index: 2;
+  font-size: 3.2rem;
+  letter-spacing: 3px;
+  color: #00ff00;
+  border: 3px solid rgba(22, 182, 212, 0.3);
+  padding: 15px;
+  width: 680px;
+  height: 180px;
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: text-shadow 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+  z-index: 2;
 }
 
 #image-container {
-    width: 480px;
-    height: 480px;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-    margin-top: 30px;
-    cursor: pointer;
-    transition: box-shadow 0.3s ease;
+  width: 480px;
+  height: 480px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
 }
 
 #image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: filter 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease, box-shadow 0.3s ease;
 }
 
 #radio-controls {
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
 }
 
-#play-btn, #next-btn, #pause-btn {
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-    margin-right: 10px;
+#play-btn, #pause-btn, #next-btn {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  margin-right: 10px;
 }
