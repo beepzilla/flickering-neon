@@ -35,7 +35,7 @@ body {
 #nav-center {
   display: flex;
   flex-grow: 1;
-  justify-content: space-around; /* Changed from space-evenly to space-around */
+  justify-content: space-between; /* Changed from space-around to space-between */
 }
 
 #logo {
@@ -48,6 +48,7 @@ body {
   text-decoration: none;
   text-shadow: 0 0 20px #00ff00;
   transition: text-shadow 0.3s ease;
+  margin: 0 10px; /* Added a minimum margin */
 }
 
 .nav-link:hover {
