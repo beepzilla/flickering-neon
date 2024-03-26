@@ -23,7 +23,7 @@ body {
   padding: 40px;
   background: #150220;
   position: fixed;
-  top: 10;
+  top: 0; /* Changed from 10 to 0 for better alignment */
   z-index: 1000;
 }
 
@@ -67,7 +67,7 @@ body {
   padding: 15px;
   width: 680px;
   height: 180px;
-  margin-top: 50px; /* Adjusted margin to account for fixed navbar */
+  margin-top: 150px; /* Increased margin to move the box down */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,28 +91,4 @@ body {
   height: 100%;
   object-fit: cover;
   transition: filter 0.3s ease, box-shadow 0.3s ease;
-}
-
-div#text {
-  font-family: "Press Start 2P", cursive;
-  font-size: 3.2rem; /* Increased font size */
-  letter-spacing: 3px;
-  color: #00ff00;
-  border: 4px solid rgba(22, 182, 212, 0.3); /* Increased border size */
-  padding: 15px; /* Increased padding */
-  position: relative;
-  width: 680px; /* Increased width */
-  height: 180px; /* Increased height */
-  margin-bottom: 40px;
-  margin-top: 20px;
-  margin-left: 10px;/* Reduced top margin */
-  cursor: pointer;
-  transition: text-shadow 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
-}
-
-span {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 10%;
 }
