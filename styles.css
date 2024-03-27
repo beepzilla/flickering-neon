@@ -124,6 +124,11 @@ body {
   }
 
   .nav-icon {
-    margin: 0 10px;
+    margin: 0 15px; /* Increase the space between icons */
+  }
+
+  #nav-right {
+    margin-top: 15px;
+    padding: 0 10px; /* Add padding to create space from the edges */
   }
 }
