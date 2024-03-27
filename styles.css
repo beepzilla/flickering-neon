@@ -50,9 +50,9 @@ body {
 }
 
 .nav-icon img {
-  height: 24px;
-  width: 24px;
-  padding: 5px; /* Add padding to create space between icons */
+  height: 45px;
+  width: 45px;
+  padding: 8px; /* Add padding to create space between icons */
 }
 
 
