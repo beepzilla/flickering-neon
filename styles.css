@@ -101,3 +101,29 @@ body {
   cursor: pointer;
   margin-right: 10px;
 }
+
+
+/* New CSS for mobile responsiveness */
+@media (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  #nav-left {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-link {
+    margin: 10px 0;
+  }
+
+  #nav-right {
+    margin-top: 15px;
+  }
+
+  .nav-icon {
+    margin: 0 10px;
+  }
+}
