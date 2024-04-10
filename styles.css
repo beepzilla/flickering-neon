@@ -49,3 +49,19 @@ body {
     object-fit: cover;
     transition: filter 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    #text {
+        font-size: 1.6rem;
+        width: 80%;
+        height: auto;
+        padding: 10px;
+        margin-top: 50px;
+    }
+
+    #image-container {
+        width: 80%;
+        height: auto;
+    }
+}
